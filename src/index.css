@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+h1,
+h2 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+.gradient-hover-effect {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #238f7f, transparent) #46d4bf;
+  font-weight: bold;
+  font-family: inherit;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.8s;
+  place-content: center;
+}
+.gradient-hover-effect:hover {
+  background-color: #279f8d;
+  background: linear-gradient(90deg, #279f8d, transparent) #4adfc9;
+  box-shadow: none;
+  color: #fff;
+}
