@@ -6,8 +6,7 @@ const AppProvider = ({ children }) => {
   const [isSignedIn, setIsSignedIn] = useState(
     sessionStorage.getItem('signedIn' || false),
   );
-  const [email, setEmail] = useState('');
-  const [usrn, setUsrn] = useState('');
+  const [user, setUser] = useState([]);
   const [projects, setProjects] = useState([]); // topics
   const [proj, setProj] = useState(sessionStorage.getItem('proj') || 0);
   const [detail, setDetail] = useState({});
@@ -17,10 +16,8 @@ const AppProvider = ({ children }) => {
       value={{
         isSignedIn,
         setIsSignedIn,
-        email,
-        setEmail,
-        usrn,
-        setUsrn,
+        user,
+        setUser,
         proj,
         setProj,
         projects,
